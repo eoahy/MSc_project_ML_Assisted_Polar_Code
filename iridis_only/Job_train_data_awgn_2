@@ -1,0 +1,22 @@
+#!/bin/bash
+#PBS -S /bin/bash
+# Script to run four Matlab jobs in parallel.
+
+# set default resource requirements for job (8 processors on 1 node for 1
+# minute). These can be overridden on the qsub command line.
+#PBS -l nodes=1:ppn=4
+#PBS -l walltime=24:00:00
+
+# use Matlab module to set up the matlab environment
+module load matlab
+
+# Change to directory from which job was submitted.
+cd $PBS_O_WORKDIR
+matlab -nodesktop -r "cnoma1"
+
+wait
+
+
+# function main_BLER_vs_SNR(code, A, E, L, min_sum, target_block_errors, target_BLER, EsN0_start, EsN0_delta, seed,Kfactor)
+
+
