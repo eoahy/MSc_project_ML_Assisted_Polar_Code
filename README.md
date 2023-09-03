@@ -1,1 +1,4 @@
 # MSc_project_ML_Assisted_Polar_Code
+Thanks to Rob's code (https://github.com/robmaunder/polar-3gpp-matlab), i modified his code to complete part of my MSc project, folder 'my-code' and 'iridis_only' are code writen by myself, sorry they are in a mess. Other 4 python file are another part of my project, versions.py and deep_versions.py are used to figure out wether the python environment can run other two code. 
+Beacuse training and evaluating data are too big, i can not upload them. To run the matlab code, file location need to change. Firstly run the right code to generate training and testing data, then train the model by runing runpython_awgn.m or runpython_fading.m in 'my_code' folder.
+To run python file in iridis, use conda command to create a new environment and set up python environment until they pass versions.py and deep_versions.py, then run my python code.
